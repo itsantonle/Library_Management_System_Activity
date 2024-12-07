@@ -7,6 +7,7 @@
 the ERD folder contains the:
 Chen Diagrams - Conceptual Modelling
 Crow's foot - Logical Model (used to create the tables and the schema in PostgreSQL)
+pgerd file for the table and schema
 
 # SQL QUERIES
 
@@ -23,6 +24,7 @@ SQL QUERIES folder contains the screenshot for:
 # SQL CODE
 
 - actual SQL code used to run the queries in the PostgreSQL query tool
+- chronologically listed
 
 # PERFORMANCE
 
@@ -30,6 +32,7 @@ the Performance folder contains:
 
 - screenshot of the performance
 - explanation on how you would prevent borrowing of a specific book instance when quanity is zero
+- fast retrieval of the overdues explanation
 
 # REFLECTIon
 
