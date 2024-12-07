@@ -1,5 +1,7 @@
 # Activity for Database Systems SE 2141
 
+# A. LEGAYADA
+
 # ERD
 
 the ERD folder contains the:
