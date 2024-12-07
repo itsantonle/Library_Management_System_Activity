@@ -18,7 +18,7 @@ SQL QUERIES folder contains the screenshot for:
 - Adding a new User instance
 - Recording a book loan for a user
   -Find all books borrowed by a specific User
-- List all overdue Loans for the User instance
+- List all overdue Loans for any User Instance
 
 # SQL CODE
 

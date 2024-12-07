@@ -1,0 +1,12 @@
+How would I prevent the user from borrowing a book that already has a quantity of 0?
+
+I would use a more BackEnd approach. That is the logic will be applied on the Backend and it will
+handle the exceptions. I would probably handle it by selecting the quantity column from the Books table
+and then checking whether it's zero or not. If it's zero, I'll handle it by raising an exception, 
+if it's not zero then I'll run the insert BookLoan query to create a new instance of BookLoan. 
+
+I know that there are database triggers, but at the moment i prefer the above method. 
+the psuedo code located in the same folder is referenced (handleZero.ts)
+
+For the updating of the values, it is handled by the 07-updateQuantity.sql block found in the 
+SQL QUERIES/ SQL CODE folder

@@ -1,0 +1,36 @@
+What challenges might arise if scaling this database to handle millions of users and books?
+
+- performance issues 
+multiple requests from different users accessing and updating millions of instances
+could require some power, that is... RAM. For slower devices this might cause multiple
+failures. 
+
+Solution: 
+better device
+
+- storage limits
+to be frank, the host of the database is probably going to have data limits, probably why data size
+is such a big thing in relational database and designing it. This will probably end up in long time processing requests 
+and such from front end to db.
+
+Solution: 
+get a better host but always compromise, only get storage that you know would be applicable as to not overspend.
+
+- complex finding
+
+I guess we could design the database where the uuid and the isbn will always be unique of each other to solve this problem
+that is why integer or serial ids don't always work because if an instance of a book is to be deleted
+will lead to some consistensies. 
+
+Solution: 
+Avoid using serial data type IDS or don't implement a 'delete' feature on the instances.
+This is to avoid inconsistencies like number skipping. Instead use uuid or such to make sure that 
+every id is indeed unique but also skip the inconsistency part 
+
+Visualization: 
+where user d was deleted
+id  user
+1     a
+2     b
+3     c
+5     e

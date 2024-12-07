@@ -1,0 +1,10 @@
+How would I ensure fast retrieval of overdue loans? 
+The code of the performance is located in the SQL QUERIES/SQL CODE FOLDER/ -10-explainBlock.sql
+
+I personally think the fastest way to get all instances of the overdue loans is
+just to based off the status whether it's overdue or not. I see overdue as 'pass the due date and not returned'
+others could argue that a loan may still hold the 'overdue' status even when it is returned. 
+
+I just run an update block where i check if there is the return_date column is null (meaning the user has
+not returned the book) and check whether the current date is before or after the due date, then I'll decide on the status
+then. The code referencing this approach is (SQL QUERIES / SQL CODE FOLDER / -06- updateStatus.sql)
